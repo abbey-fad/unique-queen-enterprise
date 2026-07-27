@@ -1,0 +1,862 @@
+/*======================================
+            PAGE BANNER
+======================================*/
+
+.page-banner{
+
+    min-height:55vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    color:var(--white);
+
+    margin-top:90px;
+
+    background-image:
+        linear-gradient(rgba(25,10,45,.78),
+        rgba(75,24,125,.78)),
+        url("../images/heroimage.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+/* Decorative glow */
+
+.page-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.page-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    background:rgba(212,175,55,.16);
+
+    border-radius:50%;
+
+    bottom:-100px;
+
+    right:-80px;
+
+}
+
+/* Content */
+
+.page-banner .container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    padding:0 20px;
+
+}
+
+.page-banner h1{
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    color:var(--white);
+
+    margin-bottom:20px;
+
+    text-shadow:0 4px 20px rgba(0,0,0,.35);
+
+}
+
+.page-banner p{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    font-size:1.12rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+/*======================================
+            WHO WE ARE
+======================================*/
+
+.about{
+
+    background:var(--white);
+
+}
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+/*==============================
+        FOUNDER CARD
+==============================*/
+
+.about-image{
+
+    background:var(--light);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    max-width:280px;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    border:5px solid var(--gold);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.about-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.owner-name{
+
+    margin-top:25px;
+
+    color:var(--primary);
+
+    font-size:1.6rem;
+
+}
+
+.owner-title{
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    margin:10px 0;
+
+}
+
+.owner-quote{
+
+    font-style:italic;
+
+    color:var(--gray);
+
+    margin-bottom:25px;
+
+}
+
+.owner-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.owner-social a{
+
+    width:45px;
+
+    height:45px;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    transition:var(--transition);
+
+}
+
+.owner-social a:hover{
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    transform:translateY(-5px);
+
+}
+
+/*==============================
+        ABOUT TEXT
+==============================*/
+
+.about-text h2{
+
+    color:var(--primary);
+
+    font-size:2.6rem;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+}
+
+.about-text h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--gold);
+
+    margin-top:15px;
+
+    border-radius:10px;
+
+}
+
+.about-text p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+    font-size:1.05rem;
+
+}
+
+.about-text strong{
+
+    color:var(--primary);
+
+}
+
+/*======================================
+        MESSAGE FROM THE FOUNDER
+======================================*/
+
+.founder-message{
+
+    background:var(--light);
+
+}
+
+.founder-message .card{
+
+    background:var(--white);
+
+    max-width:950px;
+
+    margin:auto;
+
+    padding:60px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    border-top:6px solid var(--gold);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.founder-message .card::before{
+
+    content:"❝";
+
+    position:absolute;
+
+    top:15px;
+
+    left:25px;
+
+    font-size:6rem;
+
+    color:rgba(212,175,55,.15);
+
+    font-family:serif;
+
+    line-height:1;
+
+}
+
+.founder-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.founder-content p{
+
+    color:var(--gray);
+
+    font-size:1.05rem;
+
+    line-height:2;
+
+    margin-bottom:22px;
+
+    text-align:justify;
+
+}
+
+.founder-content strong{
+
+    color:var(--primary);
+
+}
+
+.signature{
+
+    margin-top:40px;
+
+    color:var(--primary);
+
+    font-size:1.8rem;
+
+    font-family:'Cinzel',serif;
+
+}
+
+.founder-content .owner-title{
+
+    margin-top:12px;
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+
+/*======================================
+            OUR STORY
+======================================*/
+
+.our-story{
+
+    background:var(--white);
+
+}
+
+.story-card{
+
+    background:var(--light);
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:60px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-left:6px solid var(--gold);
+
+}
+
+.story-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:180px;
+
+    height:180px;
+
+    background:rgba(75,24,125,.05);
+
+    border-radius:0 0 0 100%;
+
+}
+
+.story-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.story-content p{
+
+    color:var(--gray);
+
+    font-size:1.05rem;
+
+    line-height:2;
+
+    margin-bottom:25px;
+
+    text-align:justify;
+
+}
+
+.story-content p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/*======================================
+        MISSION & VISION
+======================================*/
+
+.why-us{
+
+    background:var(--light);
+
+}
+
+.why-us .features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+    margin-top:60px;
+
+}
+
+.why-us .feature{
+
+    background:var(--white);
+
+    padding:50px 40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    border-top:5px solid transparent;
+
+}
+
+.why-us .feature:hover{
+
+    transform:translateY(-10px);
+
+    border-top:5px solid var(--gold);
+
+}
+
+.why-us .feature i{
+
+    font-size:4rem;
+
+    color:var(--gold);
+
+    margin-bottom:25px;
+
+}
+
+.why-us .feature h3{
+
+    color:var(--primary);
+
+    font-size:1.8rem;
+
+    margin-bottom:20px;
+
+}
+
+.why-us .feature p{
+
+    color:var(--gray);
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
+
+/*======================================
+        OUR CORE VALUES
+======================================*/
+
+.services{
+
+    background:var(--white);
+
+}
+
+.services .features{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.services .feature{
+
+    background:var(--light);
+
+    padding:40px 25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.services .feature::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:var(--gold);
+
+    transform:scaleX(0);
+
+    transition:var(--transition);
+
+}
+
+.services .feature:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.services .feature:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.services .feature i{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:var(--gold);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2.3rem;
+
+    transition:var(--transition);
+
+}
+
+.services .feature:hover i{
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    transform:rotate(10deg) scale(1.08);
+
+}
+
+.services .feature h3{
+
+    color:var(--primary);
+
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+
+}
+
+.services .feature p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+
+/*======================================
+            WHAT WE DO
+======================================*/
+
+.what-we-do{
+
+    background:var(--light);
+
+}
+
+.what-we-do .card-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.what-we-do .card{
+
+    background:var(--white);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    text-align:center;
+
+}
+
+.what-we-do .card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.what-we-do .card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    transition:var(--transition);
+
+}
+
+.what-we-do .card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.what-we-do .card h3{
+
+    color:var(--primary);
+
+    font-size:1.6rem;
+
+    margin:25px 20px 15px;
+
+}
+
+.what-we-do .card p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    padding:0 25px;
+
+    margin-bottom:30px;
+
+}
+
+.what-we-do .card .btn{
+
+    display:inline-block;
+
+    margin-bottom:30px;
+
+}
+
+/*======================================
+            ABOUT PAGE CTA
+======================================*/
+
+.cta{
+
+    background:linear-gradient(
+        135deg,
+        var(--secondary),
+        var(--primary)
+    );
+
+    color:var(--white);
+
+    text-align:center;
+
+    padding:100px 0;
+
+}
+
+.cta .container{
+
+    max-width:800px;
+
+}
+
+.cta h2{
+
+    font-size:2.8rem;
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+    color:rgba(255,255,255,.95);
+
+}
+
+.cta .btn{
+
+    display:inline-block;
+
+    padding:16px 45px;
+
+    font-size:1rem;
+
+    transition:var(--transition);
+
+}
+
+.cta .btn:hover{
+
+    transform:translateY(-5px);
+
+}

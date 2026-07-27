@@ -1,0 +1,717 @@
+/*======================================
+        WEB DEVELOPMENT HERO
+======================================*/
+
+
+.web-banner{
+
+    min-height:55vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    color:var(--white);
+
+    margin-top:90px;
+
+    background-image:
+        linear-gradient(rgba(25,10,45,.78),
+        rgba(75,24,125,.78)),
+        url("../images/web.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+/* Decorative glow */
+
+.web-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.web-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    background:rgba(212,175,55,.16);
+
+    border-radius:50%;
+
+    bottom:-100px;
+
+    right:-80px;
+
+}
+
+/* Content */
+
+.web-banner .container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    padding:0 20px;
+
+}
+
+.web-banner h1{
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    color:var(--white);
+
+    margin-bottom:20px;
+
+    text-shadow:0 4px 20px rgba(0,0,0,.35);
+
+}
+
+.web-banner p{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    font-size:1.12rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+/*======================================
+        ABOUT WEB DEVELOPMENT
+======================================*/
+
+.web-about{
+
+    background:var(--white);
+
+}
+
+.web-about-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.web-about-image{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.web-about-image img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    transition:var(--transition);
+
+}
+
+.web-about-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.web-about-content h2{
+
+    font-size:2.6rem;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+    line-height:1.3;
+
+}
+
+.web-about-content p{
+
+    color:var(--gray);
+
+    font-size:1.05rem;
+
+    line-height:2;
+
+    margin-bottom:20px;
+
+}
+
+.web-highlights{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.web-highlights div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:var(--light);
+
+    padding:16px 20px;
+
+    border-radius:12px;
+
+    transition:var(--transition);
+
+}
+
+.web-highlights div:hover{
+
+    transform:translateX(8px);
+
+}
+
+.web-highlights i{
+
+    color:var(--gold);
+
+    font-size:1.2rem;
+
+}
+
+.web-highlights span{
+
+    font-weight:500;
+
+    color:var(--dark);
+
+}
+
+/*======================================
+        OUR WEB SERVICES
+======================================*/
+
+.web-services{
+
+    background:var(--light);
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.service-card{
+
+    background:var(--white);
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    background:var(--primary);
+
+}
+
+.service-card i{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    border-radius:50%;
+
+    font-size:2.2rem;
+
+    transition:var(--transition);
+
+}
+
+.service-card:hover i{
+
+    transform:rotate(10deg) scale(1.08);
+
+}
+
+.service-card h3{
+
+    color:var(--primary);
+
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+
+    transition:var(--transition);
+
+}
+
+.service-card p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    transition:var(--transition);
+
+}
+
+.service-card:hover h3,
+
+.service-card:hover p{
+
+    color:var(--white);
+
+}
+
+/*======================================
+        WHY CHOOSE WEB
+======================================*/
+
+.why-web{
+
+    background:var(--white);
+
+}
+
+.web-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.web-feature{
+
+    background:var(--light);
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.web-feature:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-10px);
+
+}
+
+.web-feature i{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    border-radius:50%;
+
+    font-size:2rem;
+
+    transition:var(--transition);
+
+}
+
+.web-feature:hover i{
+
+    transform:rotate(10deg) scale(1.1);
+
+}
+
+.web-feature h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-size:1.5rem;
+
+    transition:var(--transition);
+
+}
+
+.web-feature p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    transition:var(--transition);
+
+}
+
+.web-feature:hover h3,
+
+.web-feature:hover p{
+
+    color:var(--white);
+
+}
+
+/*======================================
+        OUR PROCESS
+======================================*/
+
+.web-process{
+
+    background:var(--light);
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.process-card{
+
+    position:relative;
+
+    background:var(--white);
+
+    padding:45px 25px 35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.process-number{
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+
+.process-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin:20px 0 25px;
+
+}
+
+.process-card h3{
+
+    color:var(--primary);
+
+    font-size:1.4rem;
+
+    margin-bottom:15px;
+
+}
+
+.process-card p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:20px 0;
+
+}
+
+.project-tech span{
+
+    background:rgba(75,24,125,.08);
+
+    color:var(--primary);
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+/*======================================
+        WEB CTA
+======================================*/
+
+.web-cta{
+
+    background:linear-gradient(
+        135deg,
+        var(--secondary),
+        var(--primary)
+    );
+
+    color:var(--white);
+
+    text-align:center;
+
+    padding:110px 0;
+
+}
+
+.web-cta .container{
+
+    max-width:850px;
+
+}
+
+.web-cta .section-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    background:rgba(255,255,255,.12);
+
+    color:var(--gold);
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.web-cta h2{
+
+    color:var(--white);
+
+    font-size:3rem;
+
+    line-height:1.3;
+
+    margin-bottom:25px;
+
+}
+
+.web-cta p{
+
+    color:rgba(255,255,255,.92);
+
+    font-size:1.1rem;
+
+    line-height:2;
+
+    margin-bottom:45px;
+
+}
+
+.web-cta .cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.web-cta .btn{
+
+    min-width:220px;
+
+}
+
+.web-cta .btn-primary{
+
+    background:var(--gold);
+
+    color:var(--secondary);
+
+}
+
+.web-cta .btn-primary:hover{
+
+    background:var(--white);
+
+    color:var(--primary);
+
+}
+
+.web-cta .btn-secondary{
+
+    background:transparent;
+
+    border:2px solid var(--gold);
+
+    color:var(--gold);
+
+}
+
+.web-cta .btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:var(--secondary);
+
+}

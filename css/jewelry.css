@@ -1,0 +1,674 @@
+/*======================================
+        JEWELRY HERO
+======================================*/
+
+
+.jewelry-banner{
+
+    min-height:55vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    color:var(--white);
+
+    margin-top:90px;
+
+    background-image:
+        linear-gradient(rgba(25,10,45,.78),
+        rgba(75,24,125,.78)),
+        url("../images/Bead.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+/* Decorative glow */
+
+.jewelry-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.jewelry-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    background:rgba(212,175,55,.16);
+
+    border-radius:50%;
+
+    bottom:-100px;
+
+    right:-80px;
+
+}
+
+/* Content */
+
+.jewelry-banner .container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    padding:0 20px;
+
+}
+
+.jewelry-banner h1{
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    color:var(--white);
+
+    margin-bottom:20px;
+
+    text-shadow:0 4px 20px rgba(0,0,0,.35);
+
+}
+
+.jewelry-banner p{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    font-size:1.12rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+
+/*======================================
+        ABOUT OUR JEWELRY
+======================================*/
+
+.jewelry-about{
+
+    background:var(--white);
+
+}
+
+.jewelry-about-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.jewelry-about-image{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.jewelry-about-image img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    transition:var(--transition);
+
+}
+
+.jewelry-about-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.jewelry-about-content h2{
+
+    font-size:2.6rem;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+    line-height:1.3;
+
+}
+
+.jewelry-about-content p{
+
+    color:var(--gray);
+
+    font-size:1.05rem;
+
+    line-height:2;
+
+    margin-bottom:20px;
+
+}
+
+.jewelry-highlights{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.jewelry-highlights div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:var(--light);
+
+    padding:16px 20px;
+
+    border-radius:12px;
+
+    transition:var(--transition);
+
+}
+
+.jewelry-highlights div:hover{
+
+    transform:translateX(8px);
+
+}
+
+.jewelry-highlights i{
+
+    color:var(--gold);
+
+    font-size:1.2rem;
+
+}
+
+.jewelry-highlights span{
+
+    color:var(--dark);
+
+    font-weight:500;
+
+}
+
+/*======================================
+        OUR JEWELRY COLLECTION
+======================================*/
+
+.jewelry-collection{
+
+    background:var(--light);
+
+}
+
+.collection-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.collection-card{
+
+    background:var(--white);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.collection-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.collection-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:var(--transition);
+
+}
+
+.collection-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.collection-content{
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.collection-content h3{
+
+    color:var(--primary);
+
+    font-size:1.6rem;
+
+    margin-bottom:15px;
+
+}
+
+.collection-content p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.collection-content .btn{
+
+    display:inline-block;
+
+}
+
+/*======================================
+        WHY CHOOSE OUR JEWELRY
+======================================*/
+
+.why-jewelry{
+
+    background:var(--white);
+
+}
+
+.jewelry-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.feature-card{
+
+    background:var(--light);
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.feature-card:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-10px);
+
+}
+
+.feature-card i{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    border-radius:50%;
+
+    font-size:2rem;
+
+    transition:var(--transition);
+
+}
+
+.feature-card:hover i{
+
+    transform:rotate(10deg) scale(1.1);
+
+}
+
+.feature-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-size:1.5rem;
+
+    transition:var(--transition);
+
+}
+
+.feature-card p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    transition:var(--transition);
+
+}
+
+.feature-card:hover h3,
+
+.feature-card:hover p{
+
+    color:var(--white);
+
+}
+
+/*======================================
+        HOW TO ORDER
+======================================*/
+
+.jewelry-order{
+
+    background:var(--light);
+
+}
+
+.order-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.order-card{
+
+    position:relative;
+
+    background:var(--white);
+
+    padding:45px 25px 35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.order-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.order-number{
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:45px;
+
+    height:45px;
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:1rem;
+
+}
+
+.order-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin:20px 0 25px;
+
+}
+
+.order-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-size:1.4rem;
+
+}
+
+.order-card p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+/*======================================
+        JEWELRY CTA
+======================================*/
+
+.jewelry-cta{
+
+    background:linear-gradient(
+        135deg,
+        var(--secondary),
+        var(--primary)
+    );
+
+    color:var(--white);
+
+    text-align:center;
+
+    padding:110px 0;
+
+}
+
+.jewelry-cta .container{
+
+    max-width:850px;
+
+}
+
+.jewelry-cta .section-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    background:rgba(255,255,255,.12);
+
+    color:var(--gold);
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.jewelry-cta h2{
+
+    color:var(--white);
+
+    font-size:3rem;
+
+    line-height:1.3;
+
+    margin-bottom:25px;
+
+}
+
+.jewelry-cta p{
+
+    color:rgba(255,255,255,.9);
+
+    font-size:1.1rem;
+
+    line-height:2;
+
+    margin-bottom:45px;
+
+}
+
+.jewelry-cta .cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.jewelry-cta .btn{
+
+    min-width:200px;
+
+}
+
+.jewelry-cta .btn-primary{
+
+    background:var(--gold);
+
+    color:var(--secondary);
+
+}
+
+.jewelry-cta .btn-primary:hover{
+
+    background:var(--white);
+
+}
+
+.jewelry-cta .btn-secondary{
+
+    background:transparent;
+
+    border:2px solid var(--gold);
+
+    color:var(--gold);
+
+}
+
+.jewelry-cta .btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:var(--secondary);
+
+}
