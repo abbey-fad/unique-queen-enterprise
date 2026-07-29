@@ -2199,6 +2199,88 @@ a{
 }
 
 /*======================================
+        REFRESHMENT MENU
+======================================*/
+
+@media screen and (max-width:768px){
+
+    .refreshment-menu{
+
+        padding:80px 0;
+
+    }
+
+    .menu-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+    .menu-card img{
+
+        height:220px;
+
+    }
+
+    .menu-content{
+
+        padding:25px;
+
+    }
+
+    .menu-content h3{
+
+        font-size:1.4rem;
+
+    }
+
+}
+
+@media screen and (max-width:576px){
+
+    .refreshment-menu{
+
+        padding:60px 0;
+
+    }
+
+    .menu-card img{
+
+        height:200px;
+
+    }
+
+    .menu-content{
+
+        padding:20px;
+
+    }
+
+    .menu-content h3{
+
+        font-size:1.3rem;
+
+    }
+
+    .menu-content p{
+
+        font-size:.95rem;
+
+    }
+
+    .menu-content .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
+
+/*======================================
         WHY CHOOSE OUR REFRESHMENTS
 ======================================*/
 
