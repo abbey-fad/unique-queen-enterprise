@@ -23,7 +23,7 @@
     position:absolute;
     top:80px;
     left:-100%;
-    width:100%;
+    width:50%;
     background:var(--secondary);
     transition:.4s;
     }
